@@ -1,0 +1,11 @@
+(executable
+ (name template)
+ (public_name template)
+ (libraries 
+    core
+    async
+    yojson
+    ppx_deriving_yojson
+    template_lib
+  )
+ (preprocess (pps ppx_jane ppx_deriving_yojson)))
